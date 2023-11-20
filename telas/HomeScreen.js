@@ -36,16 +36,18 @@ const styles = StyleSheet.create({
   bottomHalf: {
     position: "absolute",
     bottom: 0,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
     left: 0,
-
+    zIndex: -1,
     right: 0,
-    height: "50%",
-    backgroundColor: "blue",
+    height: "55%", // Ajuste a altura conforme necessário
+    backgroundColor: "#216C00", // Cor de fundo da div
   },
   paragraph: {
     margin: 24,
-    marginTop: -100,
-    backgroundColor: "red",
+    marginTop: -70,
+
     fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
@@ -58,16 +60,19 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     color: "white",
+    marginTop: 100,
+    padding: 20,
+    textAlign: "center",
   },
   buttonContainer: {
     marginTop: 20,
-    backgroundColor: "red",
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+    backgroundColor: "#7ED957",
+    paddingVertical: 15,
+    paddingHorizontal: 50,
     borderRadius: 5,
   },
   buttonText: {
-    color: "white",
+    color: "black",
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
