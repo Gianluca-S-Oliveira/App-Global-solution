@@ -18,7 +18,7 @@ const TopBar = () => {
 const styles = StyleSheet.create({
   container: {
     position: "absolute",
-    top: 0,
+    top: -10,
     borderColor: "red",
     left: 0,
     zIndex: -1,

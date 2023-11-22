@@ -1,6 +1,13 @@
 // screens/HomeScreen.js
 import React from "react";
-import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  StyleSheet,
+  Linking,
+} from "react-native";
 
 const HomeScreen = ({ navigation }) => {
   return (
