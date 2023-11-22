@@ -2,6 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "./telas/HomeScreen";
+import Footewr from "./components/footer";
 import TelaMedicos from "./telas/TelaMedicos";
 import TelaPacientes from "./telas/TelaPacientes";
 import TelaInfos from "./telas/TelaInfos";
