@@ -29,22 +29,31 @@ const TelaMedicos = ({ navigation }) => {
       <Image
         style={styles.logo}
         alt="imagem da logo"
-        source={require("../assets/img1.jpg")}
+        source={require("../assets/img2.jpg")}
       />
-      <Text style={styles.titulo2}>O que há de novidade:</Text>
-      <Noticia texto="Ministérios da Saúde e da Educação retomam Coordenação Nacional do Programa Mais Médicos" />
-      <Noticia texto="Ministério da Saúde divulga resultado final da segunda chamada do programa Mais Médicos" />
-      <Text style={styles.titulo3}>
-        Fóruns recentementee criados, participe da discussão!
-      </Text>
-      <View style={styles.container}>
-        <Text>
-          Clique para participar:{" "}
-          <TouchableOpacity onPress={handleLinkPress}>
-            <Text style={styles.linkText}>Participe</Text>
-          </TouchableOpacity>
-        </Text>
+      <Text style={styles.titulo2}>Está com um desses sintomas?</Text>
+      <View style={styles.sintomas}>
+        <TouchableOpacity onPress={handleLinkPress}>
+          <Text style={styles.linkText}>DOR DE CABEÇA</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleLinkPress}>
+          <Text style={styles.linkText}>DOR ABDOMINAL</Text>
+        </TouchableOpacity>
       </View>
+
+      <View style={styles.sintomas}>
+        <TouchableOpacity onPress={handleLinkPress}>
+          <Text style={styles.linkText}>NAUSEAS</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleLinkPress}>
+          <Text style={styles.linkText}>SINTOMAS GRIPAIS</Text>
+        </TouchableOpacity>
+      </View>
+
+      <Text style={styles.titulo3}>O que há de novidade:</Text>
+      <Noticia texto="Aprovado projeto de inclusão de usuários do SUS em prontuário eletrônico integrado" />
+      <Noticia texto="Cinco anos de PrEP: política anti-HIV avança, mas se concentra no Sudeste" />
+
       <Footer></Footer>
     </View>
   );
@@ -55,6 +64,22 @@ const styles = StyleSheet.create({
     width: 340,
     borderRadius: 20,
   },
+  linkText: {
+    margin: 12,
+    color: "white",
+    width: 150,
+    borderColor: "white",
+    backgroundColor: "#006C25",
+    paddingVertical: 13,
+    borderRadius: 10,
+    textAlign: "center",
+  },
+  sintomas: {
+    padding: 3,
+
+    flexDirection: "row",
+    gap: 5,
+  },
   titulo: {
     color: "#278100",
     fontSize: 30,
@@ -62,11 +87,11 @@ const styles = StyleSheet.create({
     textAlign: "left",
     marginLeft: -130,
     marginBottom: 10,
-    marginTop: -140,
+    marginTop: -50,
   },
   titulo2: {
-    fontSize: 20,
-    marginTop: 16,
+    fontSize: 15,
+    marginTop: 5,
     fontWeight: "600",
     textAlign: "left",
     marginLeft: -120,
@@ -78,6 +103,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     textAlign: "left",
     marginBottom: 10,
+    marginLeft: -150,
   },
 });
 export default TelaMedicos;
